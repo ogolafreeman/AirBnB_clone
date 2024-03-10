@@ -23,7 +23,6 @@ class TestAmenityDocs(unittest.TestCase):
     """Tests to check the documentation and style of Amenity class"""
 
     @classmethod
-
     def setUpClass(cls):
 
         """Set up for the doc tests"""

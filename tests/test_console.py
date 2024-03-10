@@ -655,5 +655,6 @@ class TestConsoleClass(unittest.TestCase):
 
             self.assertTrue("John" in val.getvalue())
 
+
 if __name__ == '__main__':
     unittest.main()

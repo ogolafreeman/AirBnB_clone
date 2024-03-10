@@ -22,7 +22,6 @@ class TestUserDocs(unittest.TestCase):
     """Tests to check the documentation and style of User class"""
 
     @classmethod
-
     def setUpClass(cls):
         """Set up for the doc tests"""
 
