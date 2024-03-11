@@ -12,7 +12,7 @@ class User(BaseModel):
         """Initializes a new instance of the class."""
 
         super().__init__(*args, **kwargs)
-        self.email = kwargs.get('email', '')
-        self.password = kwargs.get('password', '')
-        self.first_name = kwargs.get('first_name', '')
-        self.last_name = kwargs.get('last_name', '')
+        self.email = ""
+        self.password = ""
+        self.first_name = ""
+        self.last_name = ""
