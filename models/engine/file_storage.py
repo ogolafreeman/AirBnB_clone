@@ -16,7 +16,7 @@ classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
 
 
-class FileStorage:
+class FileStorage():
     """serializes instances to a JSON file & deserializes back to instances"""
 
     # string - path to the JSON file
@@ -50,4 +50,8 @@ class FileStorage:
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
         except FileNotFoundError:
+            pass
+        except json.JSONDecodeError:
+            pass
+        except Exception as e:
             pass
